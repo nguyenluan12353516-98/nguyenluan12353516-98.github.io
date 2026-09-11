@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>脳内バグ劇場 — Nounai Bug Gekijou</title>
+<style>
+  :root{
+    --ink:#1b1a17; --muted:#6b6560; --line:#e3ddd4;
+    --bg:#faf8f4; --card:#ffffff; --accent:#b5462f;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ink:#ece7e0; --muted:#a09890; --line:#332f2a;
+      --bg:#16150f; --card:#1e1c17; --accent:#e08063;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ink:#ece7e0; --muted:#a09890; --line:#332f2a;
+    --bg:#16150f; --card:#1e1c17; --accent:#e08063;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",
+         "Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;
+  }
+  .wrap{max-width:720px; margin:0 auto; padding:56px 24px 72px}
+  header{border-bottom:1px solid var(--line); padding-bottom:28px; margin-bottom:32px}
+  h1{font-size:28px; margin:0 0 6px; letter-spacing:.01em; text-wrap:balance}
+  .ja{font-size:15px; color:var(--muted); margin:0}
+  h2{font-size:18px; margin:34px 0 10px}
+  p{margin:0 0 14px}
+  ul{margin:0 0 14px; padding-left:22px}
+  li{margin-bottom:6px}
+  .card{
+    background:var(--card); border:1px solid var(--line);
+    border-radius:10px; padding:20px 22px; margin:22px 0;
+  }
+  .label{
+    display:inline-block; font-size:11px; letter-spacing:.09em;
+    text-transform:uppercase; color:var(--accent); font-weight:600;
+    margin-bottom:8px;
+  }
+  a{color:var(--accent)}
+  nav{margin-top:36px; padding-top:22px; border-top:1px solid var(--line);
+      font-size:14px; display:flex; gap:20px; flex-wrap:wrap}
+  footer{margin-top:40px; font-size:13px; color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Nounai Bug Gekijou</h1>
+  <p class="ja">脳内バグ劇場 — animated comedy shorts</p>
+</header>
+
+<p>
+  Nounai Bug Gekijou is a small, independently run channel publishing original
+  animated comedy sketches in Japanese. Each episode is a short scene in which
+  an everyday situation — a ticket machine, a hospital reception desk, a
+  neighbourhood meeting — behaves in a way that is slightly, absurdly wrong.
+</p>
+
+<div class="card">
+  <span class="label">About this site</span>
+  <p style="margin-bottom:0">
+    This site exists to publish the operating documents for the channel's
+    publishing tool: its terms of service and its privacy policy. It is not a
+    commercial product and has no sign-up, no accounts and no users other than
+    the channel operator.
+  </p>
+</div>
+
+<h2>The publishing tool</h2>
+<p>
+  The channel is produced with a private automation tool, also called
+  <em>Nounai Bug Gekijou</em>. The tool assembles episodes from scripts,
+  synthesized narration and illustrations, then publishes the finished video to
+  the channel operator's own accounts on YouTube and other platforms.
+</p>
+<ul>
+  <li>It is operated by one person, for that person's own channel.</li>
+  <li>It publishes only content created by the channel operator.</li>
+  <li>It never reads, collects or publishes anything belonging to anyone else.</li>
+  <li>Every publication is approved manually by the operator before it goes out.</li>
+</ul>
+
+<h2>Synthetic media</h2>
+<p>
+  Episodes are produced with generative tools: illustrations are generated from
+  written descriptions, and narration uses synthetic voices. This is disclosed
+  on every video on every platform that offers a disclosure field, and the
+  channel does not present its episodes as recordings of real events or real
+  people.
+</p>
+
+<nav>
+  <a href="./terms.html">Terms of Service</a>
+  <a href="./privacy.html">Privacy Policy</a>
+</nav>
+
+<footer>
+  Last updated 11 September 2026.
+</footer>
+
+</div>
+</body>
+</html>
